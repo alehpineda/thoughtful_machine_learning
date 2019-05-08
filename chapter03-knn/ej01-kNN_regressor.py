@@ -143,7 +143,7 @@ filename = os.path.join(here, 'king_county_data_geocoded.csv')
 
 def main():
     regression_test = RegresionTest()
-    regression_test.load_csv_file(filename)
+    regression_test.load_csv_file(filename, 1000)
     regression_test.plot_error_rates()
 
 if __name__ == "__main__":
